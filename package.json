@@ -1,0 +1,18 @@
+{
+  "name": "replica",
+  "version": "0.0.1",
+  "description": "replica de pinterest",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "pinterest"
+  ],
+  "author": "Valeria Peñaloza",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  }
+}
