@@ -8,7 +8,7 @@ window.view.viewPhoto = (photoJSON) => {
 		contentCard.innerHTML += 
 		`
 		<div class="card border-0 mt-5 linkModal p-2">
-		<a href="#" data-toggle="modal" data-target="#exampleModalCenter" class="">
+		<a href="#" data-toggle="modal" data-target="#id${photoCard.id}" class="">
 		<img class="card-img-top photoCard" src="${photoCard.urlPhoto}" alt="Card image cap">
 		<div class="card-body">
 		<h5 class="card-title titlePhoto">${photoCard.namePhoto}</h5>
@@ -21,7 +21,7 @@ window.view.viewPhoto = (photoJSON) => {
 		</a>
 		</div>
 		<!-- MODAL-->
-		<div class="modal fade showColor" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal fade showColor" id="id${photoCard.id}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 		<button type="button" class="close mr-2 mt-2" data-dismiss="modal" aria-label="Close">
 		<span aria-hidden="true">&times;</span>
 		</button>
