@@ -14,7 +14,58 @@
 	<link rel="stylesheet" type="text/css" href="src/css/style.css">
 </head>
 <body>
-	<h1>Holi!!!</h1>
+	<!-- inicio container top nav -->
+	<nav class="pt-3 fixed-top bg-white">
+		<a href="#" class="float-left iconNav"><i class="fab fa-pinterest text-danger"></i></a>
+		<div class="col-12 containerMenu">
+			<form class="form-inline col-6">
+				<div class="input-group mb-2 mr-sm-2 ml-3 col-12">
+					<div class="input-group-prepend ">
+						<div class="input-group-text border-0 bg-ligth"><i class="fas fa-search iconSearch"></i></div>
+					</div>
+					<input type="text" class="form-control searchNav border-0" placeholder="Buscar">
+				</div>
+			</form>
+			<div class="col-5 float-right d-flex justify-content-around linkNav">
+				<button class="activeLink btn btnNav">Inicio</button>
+				<button class="btn btnNav">Siguiendo</button>
+				<button class="btn btnNav">Explorar</button>
+				<button class="btn btnNav"><i class="fas fa-user-circle"></i> Valeria</button>
+				<button class="btn btnNav"><i class="fas fa-comment"></i></button>
+				<button class="btn btnNav"><i class="fas fa-bell"></i></button>
+				<button class="btn btnNav"><i class="fas fa-ellipsis-h"></i></button>
+			</div>
+			
+		</div>
+		<hr>
+	</nav>
+	<div class="container-fluid contBtnNav">
+		<div class="row">
+			<div class="col-12">
+				<button class="btn btn-info" onclick="window.model.callApi()">Dress</button>
+				<button class="btn btn-warning">San Miguel De Allende</button>
+				<button class="btn btn-success">Friki</button>
+				<button class="btn btn-danger">Invitaciones</button>
+				<button class="btn btn-dark">Fotography</button>
+				<button class="btn btn-warning">Photocall</button>
+				<button class="btn btn-ligth">Damas</button>
+				<button class="btn btn-primary">Ilumination</button>
+				<button class="btn btn-secondary">Ramo</button>
+				<button class="btn btn-info">Souvenires</button>
+				<button class="btn btn-warning">Invitacion</button>
+				<button class="btn btn-success">Ramos</button>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="card-columns" id="contentCard">
+				<!-- card de imagenes -->
+			</div>
+		</div>
+	</div>
+
+	<!-- <button class="btn bg-info" onclick="window.model.callApi()">Obtener imagen</button> -->
 	<!-- Jquery -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<!-- popper -->
