@@ -1,17 +1,19 @@
 /*mis estilos*/
 .linkModal a{
 	text-decoration: none;
+	outline: none;
+	cursor: zoom-in;
 }
 
 .linkModal:hover{
-	box-shadow: 4px 6px 11px 0px rgba(0,0,0,0.54);
+	box-shadow: 4px 6px 11px 0px rgba(0,0,0,0.10);
 }
 
 .iconSearch{
 	color: #999999;
 	font-size: 20px;
-
 }
+
 .iconNav i{
 	font-size: 40px;
 }
@@ -127,6 +129,82 @@
 	font-size: 15px;
 	width: 75px;
 	padding: 5px;
+	color: #666666;
+}
+
+.btnPin{
+	padding: 10px;
+	background-color: #E9ECEF;
+	border-radius: 50px;
+	box-shadow: 2px 3px 6px 0px rgba(0,0,0,0.50);
+	cursor: pointer;
+	
+}
+
+.btnsFloat{
+	z-index: 99999;
+	top: 75%;
+	position: fixed;
+	right: 5%;
+}
+
+.boxUpPin{
+	border: #999 2px dashed;
+	width: 200px;
+	height: 300px;
+	display: block;
+	margin: auto;
+	border-radius: 10px;
+}
+
+.boxUpPin p{
+	padding: 40px;
+	color: #666;
+	margin-top: 50px;
+}
+
+.textareaSize{
+	resize: none;
+	height: 184px !important;
+}
+
+.modal-footer{
+	justify-content: start !important;
+}
+
+.btnPinModal1{
+	background: #ffffff;
+	border: 2px solid #EFEFEF;
+	font-weight: 500;
+	margin-right: -10px;
+	font-size: 14px;
+	color: #666;
+	
+}
+
+.btnPinModal2{
+	border-top-left-radius: 0;
+	border-bottom-left-radius:0; 
+	border: 2px solid #EFEFEF;
+	background-color: #EFEFEF;
+	font-size: 14px;
+	color: #9F9F9F;
+	font-weight: 500;
+}
+
+.contentBtnPin{
+	background-color: #EFEFEF
+	border-radius:50px;
+}
+.btnPinModal3{
+	float: right;
+	background-color: #EFEFEF;
+	font-size: 14px;
+	color: #9F9F9F;
+	font-weight: 500;
+}
+
+.titleAddPinModal, .titleInputModal{
 	color: #666666;
 }
 
