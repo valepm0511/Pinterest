@@ -1,1 +1,3 @@
-window.controller = {};
+window.onload = () => {
+	window.model.callApi();
+};
