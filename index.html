@@ -1,128 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>Pinterest</title>
-	<!-- Bootstrap -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<!--fontAwesome-->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-	crossorigin="anonymous">
-	<!-- mi css -->
-	<link rel="stylesheet" type="text/css" href="src/css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Pinterest</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--fontAwesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- mi css -->
+    <link rel="stylesheet" type="text/css" href="src/css/style.css">
+    <link rel="icon" type="image/x-icon" href="src/img/favicon.png">
 </head>
+
 <body>
-	<!-- inicio container top nav -->
-	<nav class="pt-3 fixed-top bg-white">
-		<a href="#" class="float-left iconNav"><i class="fab fa-pinterest text-danger"></i></a>
-		<div class="col-12 containerMenu">
-			<form class="form-inline col-6">
-				<div class="input-group mb-2 mr-sm-2 ml-3 col-12">
-					<div class="input-group-prepend ">
-						<div class="input-group-text border-0 bg-ligth"><i class="fas fa-search iconSearch"></i></div>
-					</div>
-					<input type="text" class="form-control searchNav border-0" placeholder="Buscar">
-				</div>
-			</form>
-			<div class="col-5 float-right d-flex justify-content-around linkNav">
-				<button class="activeLink btn btnNav">Inicio</button>
-				<button class="btn btnNav">Siguiendo</button>
-				<button class="btn btnNav">Explorar</button>
-				<button class="btn btnNav"><i class="fas fa-user-circle"></i> Valeria</button>
-				<button class="btn btnNav"><i class="fas fa-comment"></i></buFtton>
-				<button class="btn btnNav"><i class="fas fa-bell"></i></button>
-				<button class="btn btnNav"><i class="fas fa-ellipsis-h"></i></button>
-			</div>
-			
-		</div>
-		<hr>
-	</nav>
-	<div class="container-fluid contBtnNav">
-		<div class="row">
-			<div class="col-12 d-flex justify-content-around">
-				<i class="fas fa-angle-left iconDirection"></i>
-				<button class="btn btn-info" onclick="window.model.callApi()">Dress</button>
-				<button class="btn btn-warning">San Miguel De Allende</button>
-				<button class="btn btn-success">Friki</button>
-				<button class="btn btn-danger">Invitaciones</button>
-				<button class="btn btn-dark">Fotography</button>
-				<button class="btn btn-warning">Photocall</button>
-				<button class="btn btn-ligth">Damas</button>
-				<button class="btn btn-primary">Ilumination</button>
-				<button class="btn btn-secondary">Ramo</button>
-				<button class="btn btn-info">Souvenires</button>
-				<button class="btn btn-warning">Invitacion</button>
-				<button class="btn btn-success">Ramos</button>
-				<i class="fas fa-angle-right iconDirection"></i>
-			</div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="card-columns" id="contentCard">
-				<!-- card de imagenes -->
-			</div>
-		</div>
-		<div class="btnsFloat">
-			<i class="fas fa-plus btnPin d-flex mb-2" data-toggle="modal" data-target="#exampleModalCenter"></i>
-			<i class="fas fa-question btnPin mb-5 d-flex"></i>
-		</div>
-		<!-- modal btn flotante -->
-		<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-			<div class="modal-dialog modal-lg modal-dialog-centered w-75" role="document">
-				<div class="modal-content">
-					<div class="modal-header d-block text-center">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <!-- inicio container top nav -->
+    <nav class="pt-3 fixed-top bg-white">
+        <a href="#" class="float-left iconNav"><i class="fab fa-pinterest text-danger"></i></a>
+        <div class="col-12 containerMenu">
+            <form class="form-inline col-6">
+                <div class="input-group mb-2 mr-sm-2 ml-3 col-12">
+                    <div class="input-group-prepend ">
+                        <div class="input-group-text border-0 bg-ligth"><i class="fas fa-search iconSearch"></i></div>
+                    </div>
+                    <input type="text" class="form-control searchNav border-0" placeholder="Buscar">
+                </div>
+            </form>
+            <div class="col-5 float-right d-flex justify-content-around linkNav">
+                <button class="activeLink btn btnNav">Inicio</button>
+                <button class="btn btnNav">Siguiendo</button>
+                <button class="btn btnNav">Explorar</button>
+                <button class="btn btnNav"><i class="fas fa-user-circle"></i> Valeria</button>
+                <button class="btn btnNav"><i class="fas fa-comment"></i></button>
+                <button class="btn btnNav"><i class="fas fa-bell"></i></button>
+                <button class="btn btnNav"><i class="fas fa-ellipsis-h"></i></button>
+            </div>
+
+        </div>
+        <hr>
+    </nav>
+    <div class="container-fluid contBtnNav">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-around">
+                <i class="fas fa-angle-left iconDirection"></i>
+                <button class="btn btn-info" onclick="window.model.callApi()">Dress</button>
+                <button class="btn btn-warning">San Miguel De Allende</button>
+                <button class="btn btn-success">Friki</button>
+                <button class="btn btn-danger">Invitaciones</button>
+                <button class="btn btn-dark">Fotography</button>
+                <button class="btn btn-warning">Photocall</button>
+                <button class="btn btn-ligth">Damas</button>
+                <button class="btn btn-primary">Ilumination</button>
+                <button class="btn btn-secondary">Ramo</button>
+                <button class="btn btn-info">Souvenires</button>
+                <button class="btn btn-warning">Invitacion</button>
+                <button class="btn btn-success">Ramos</button>
+                <i class="fas fa-angle-right iconDirection"></i>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="card-columns" id="contentCard">
+                <!-- card de imagenes -->
+            </div>
+        </div>
+        <div class="btnsFloat">
+            <i class="fas fa-plus btnPin d-flex mb-2" data-toggle="modal" data-target="#exampleModalCenter"></i>
+            <i class="fas fa-question btnPin mb-5 d-flex"></i>
+        </div>
+        <!-- modal btn flotante -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered w-75" role="document">
+                <div class="modal-content">
+                    <div class="modal-header d-block text-center">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
-						<h5 class="modal-title titleAddPinModal" id="exampleModalVerticalLabel">Crear Pin</h5>
-					</div>
-					<div class="modal-body">
-						<div class="row">
-							<div class="col-4">
-								<div class="boxUpPin">
-									<p class="text-center"><i class="fas fa-camera"></i><br>Arratras y suelta o haz click para cargar </p>
-								</div>
-							</div>
-							<div class="col-7 px-4">
-								<form>
-									<div class="form-group">
-										<label class="titleInputModal">Sitio Web</label>
-										<input type="text" class="form-control" placeholder="Añade la URL con la que enlazas este pin">
-									</div>
-									<div class="form-group">
-										<label class="titleInputModal">Descripcion</label>
-										<textarea class="form-control textareaSize" placeholder="Di algo más sobre este pin"></textarea>
-									</div>
-								</form>
+                        <h5 class="modal-title titleAddPinModal" id="exampleModalVerticalLabel">Crear Pin</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="boxUpPin">
+                                    <p class="text-center"><i class="fas fa-camera"></i><br>Arrastras y suelta o haz click para cargar </p>
+                                </div>
+                            </div>
+                            <div class="col-7 px-4">
+                                <form>
+                                    <div class="form-group">
+                                        <label class="titleInputModal">Sitio Web</label>
+                                        <input type="text" class="form-control" placeholder="Añade la URL con la que enlazas este pin">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="titleInputModal">Descripcion</label>
+                                        <textarea class="form-control textareaSize" placeholder="Di algo más sobre este pin"></textarea>
+                                    </div>
+                                </form>
 
-							</div>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<div class="contentBtnPin col-12">
-							<button type="button" class="btn btnPinModal1">Cargar Pin</button>
-							<button type="button" class="btn btnPinModal2">Guardar desde este sitio</button>
-							<button type="button" class="btn btn-ligth btnPinModal3">Listo</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="contentBtnPin col-12">
+                            <button type="button" class="btn btnPinModal1">Cargar Pin</button>
+                            <button type="button" class="btn btnPinModal2">Guardar desde este sitio</button>
+                            <button type="button" class="btn btn-ligth btnPinModal3">Listo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-	<!-- <button class="btn bg-info" onclick="window.model.callApi()">Obtener imagen</button> -->
-	<!-- Jquery -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<!-- popper -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	<!-- js bootstrap -->
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-	<!-- mis js -->
-	<script src="src/js/model.js"></script>
-	<script src="src/js/view.js"></script>
-	<script src="src/js/controller.js"></script>
+    <!-- <button class="btn bg-info" onclick="window.model.callApi()">Obtener imagen</button> -->
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <!-- js bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- mis js -->
+    <script src="src/js/model.js"></script>
+    <script src="src/js/view.js"></script>
+    <script src="src/js/controller.js"></script>
 </body>
+
 </html>

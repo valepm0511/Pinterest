@@ -1,12 +1,12 @@
 window.view = {};
 
 window.view.viewPhoto = (photoJSON) => {
-  let contentCard = document.getElementById('contentCard');
-  contentCard.innerHTML = '';
-  for (let photoCard of photoJSON) {
-    // console.log(photoCard.nameAuthor);
-    contentCard.innerHTML += 
-		`
+    let contentCard = document.getElementById('contentCard');
+    contentCard.innerHTML = '';
+    for (let photoCard of photoJSON) {
+        // console.log(photoCard.nameAuthor);
+        contentCard.innerHTML +=
+            `
 		<div class="card border-0 mt-5 linkModal p-2">
 	<a href="#" data-toggle="modal" data-target="#id${photoCard.id}" class="">
 		<img class="card-img-top photoCard" src="${photoCard.urlPhoto}" alt="Card image cap">
@@ -59,5 +59,5 @@ window.view.viewPhoto = (photoJSON) => {
 	</div>
 </div>
 		`;
-  };
+    };
 };
